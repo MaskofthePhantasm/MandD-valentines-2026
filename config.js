@@ -50,7 +50,7 @@ const CONFIG = {
     // Messages that appear after they say "Yes!"
     celebration: {
         title: "Yay! I'm the luckiest person in the world! 🎉💝💖💝💓",
-        message: "Now come get your gift, a big hug and a huge kiss! [And here is a little treat for my cutiepie](https://starbucks.cashstar.com/gift-card/view/8qYIXE6xpcJoA9V4pg8zU8P91/rarRa8/)",
+        message: "Now come get your gift, a big hug and a huge kiss!,
         emojis: "🎁💖🤗💝💋❤️💕"  // These will bounce around
     },
 
