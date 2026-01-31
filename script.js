@@ -181,7 +181,23 @@ function celebrate() {
     
     // Set celebration messages
     document.getElementById('celebrationTitle').textContent = config.celebration.title;
-    document.getElementById('celebrationMessage').textContent = config.celebration.message;
+    const msgEl = document.getElementById('celebrationMessage');
+
+// Clear whatever is there
+msgEl.textContent = config.celebration.message;
+
+// Add a line break + clickable link
+if (config.celebration.linkUrl) {
+  msgEl.appendChild(document.createElement('br'));
+
+  const a = document.createElement('a');
+  a.href = config.celebration.linkUrl;
+  a.textContent = config.celebration.linkText || "Click here";
+  a.target = "_blank";
+  a.rel = "noopener noreferrer";
+
+  msgEl.appendChild(a);
+}
     document.getElementById('celebrationEmojis').textContent = config.celebration.emojis;
     
     // Create heart explosion effect
